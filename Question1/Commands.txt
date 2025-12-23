@@ -1,1 +1,2 @@
-Test
+1. whoami
+i wrote this comman to know the currently user loggin in to linux
