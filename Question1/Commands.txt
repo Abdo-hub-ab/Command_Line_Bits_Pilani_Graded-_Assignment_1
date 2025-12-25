@@ -1,2 +1,16 @@
-1. whoami
-i wrote this comman to know the currently user loggin in to linux
+Question1 
+
+1. User Identity Verification
+
+1.1 Command: whoami
+Explanation :I wrote whoami command to display the currently logged in username 
+
+1.2 Command: groups
+
+Explanation: I wrote groups to list all groups my user belongs to. The output confirms my account is in groups like sudo, which indicates I have admin access 
+
+
+
+
+
+
