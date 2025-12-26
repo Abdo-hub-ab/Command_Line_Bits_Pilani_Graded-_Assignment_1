@@ -1,0 +1,88 @@
+Question2 commands
+
+
+1. Project Workspace Setup
+
+1.1 Command: mkdir -p ~/documents
+
+Explanation: I created a directory named documents inside  home directory to store project related files , I used -p to avoid errors if the folder already exists
+
+-------------------------------------------------
+2. File Creation
+
+
+2.1 Command: cd documents
+Explanation: I navigated into the documents directory so the next file operations happen inside it
+
+2.2 Command: touch plan.txt
+
+Explanation: I created an empty file named plan.txt in  documents 
+
+-------------------------------------------------
+
+
+3. Content Addition
+
+
+3.1 Command: echo I created this file for solving first assignment of linux >user_info.txt
+
+Explanation: I wrote  text into plan.txt using output redirection to store a short project note.
+
+-------------------------------------------------
+4. File Metadata Verification
+
+
+4.1 Command: ls -l plan.txt
+Explanation: I displayed the permissions, ownership, and other details of plan.txt This verifies that the file is owned by my username
+
+-------------------------------------------------
+
+
+5. File Duplication
+
+
+5.1 Command: cp plan.txt plan_copy.txt
+
+Explanation : I created a duplicate copy of plan.txt named plan_copy.txt to demonstrate file copying
+
+-------------------------------------------------
+6. Directory Renaming
+
+
+6.1 Command: cd ..
+Explanation: I returned to my home directory so I can rename the documents folder
+
+6.2 Command: mv documents project_documents
+Explanation: I renamed the documents directory to project_documents to  represent the project scope.
+
+-------------------------------------------------
+7. Archival Structure
+
+
+7.1 Command: mkdir -p ~/project_documents/archive
+
+Explanation: I created a subdirectory named archive inside project_documents to store archived files
+
+
+8. File Organization
+
+
+8.1 Command: mv plan_copy.txt archive 
+
+Explanation: I moved plan_copy.txt into the archive folder to organize the project documents properly.
+
+-------------------------------------------------
+9. Recursive Listing
+
+
+9.1 Command: ls -lR project_documents
+
+Explanation: I listed all files and subdirectories inside project_documents  to show the full directory structure.
+
+-------------------------------------------------
+10. Path Verification
+
+
+10.1 Command: realpath ~/project_documents/archive/plan_copy.txt
+
+Explanation: I displayed the absolute path of plan_copy.txt after moving it into the archive directory to confirm its new location

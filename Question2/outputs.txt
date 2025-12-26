@@ -1,0 +1,124 @@
+Question2 outputs
+
+
+1. Project Workspace Setup Output
+
+
+1.1 Output: not output , the directory is ceated
+
+Explanation: The directory is created successfully
+
+
+2. File Creation Outputs
+
+
+2.1 Output: 
+
+──(hisenberg㉿kali)-[~]
+└─$ cd documents            
+                                                                                                         
+┌──(hisenberg㉿kali)-[~/documents]
+└─$ ls
+                                                                                                         
+┌──(hisenberg㉿kali)-[~/documents]
+└─$ touch user_info.txt
+
+
+
+Explanation: Changing directory does not show output unless there is an error
+
+2.2 Output: 
+
+──(hisenberg㉿kali)-[~/documents]
+└─$ touch user_info.txt
+                                                                                                         
+┌──(hisenberg㉿kali)-[~/documents]
+└─$ ls
+user_info.txt
+
+
+Explanation: The touch command creates the file 
+
+-----------------------------
+3. Content Addition Output
+-----------------------------
+
+3.1 Output: I Wrote Text Directly To the file With echo Command So There Is No Output
+
+Explanation: The echo output was redirected into plan.txt nothing appears on the terminal.
+
+-----------------------------
+
+
+4. File Metadata Verification Output
+
+
+4.1 Output: -rw-rw-r-- 1 hisenberg hisenberg 58 Dec 26 08:20 plan.txt
+
+Explanation: This output shows the file permissions, owner/group (hisenberg hisenberg), file size, and time
+
+-----------------------------
+5. File Duplication Output
+
+5.1 Output: no output
+Explanation: The file copy successfully and cp  shows no output unless there is an error
+
+-----------------------------
+6. Directory Renaming Outputs
+
+
+6.1 Output: (no output)
+Explanation: The `cd` command changes location without terminal output when successful.
+
+6.2 Output: (no output)
+Explanation: The `mv` command renames the folder successfully and typically prints nothing.
+
+-----------------------------
+7. Archival Structure Output
+
+
+7.1 Output: no output
+
+Explanation: The archive folder is created 
+
+-----------------------------
+
+
+8. File Organization Output
+
+
+8.1 Output: 
+
+┌──(hisenberg㉿kali)-[~/project_documents]
+└─$ mv plan_copy.txt archive 
+                                                                                                         
+┌──(hisenberg㉿kali)-[~/project_documents]
+└─$ ls
+archive  plan.txt
+
+
+Explanation: The file was moved into the archive folder successfully
+-----------------------------
+
+9. Recursive Listing Output
+
+
+9.1 Output: 
+
+project_documents:
+total 8
+drwxrwxr-x 2 hisenberg hisenberg 4096 Dec 26 09:11 archive
+-rw-rw-r-- 1 hisenberg hisenberg   58 Dec 26 08:20 plan.txt
+
+project_documents/archive:
+total 4
+-rw-rw-r-- 1 hisenberg hisenberg 58 Dec 26 08:59 plan_copy.txt
+
+Explanation: This output shows the complete folder tree of project_documents  including the archive subfolder and the files inside it
+
+-----------------------------
+10. Path Verification Output
+
+10.1 Output: /home/hisenberg/project_documents/archive/plan_copy.txt
+
+Explanation: This is the full absolute path to plan_copy.txt after it was moved confirming it is located inside the archive directory
