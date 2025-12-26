@@ -1,0 +1,232 @@
+Question3 outputs
+
+-----------------------------
+1. File Creation Output
+
+
+1.1 Output: I created a file so there is no output
+
+Explanation: The file was created and text was written into it , nothing was printed on the terminal
+
+-----------------------------
+
+2. Hard Link Creation Output
+
+
+2.1 Output: 
+
+──(hisenberg㉿kali)-[~]
+└─$ ln -s sample_data.txt sample_soft.txt
+                                                                                                         
+┌──(hisenberg㉿kali)-[~]
+└─$ ls                                   
+Command_Line_Bits_Pilani_Graded-_Assignment_1  Downloads  project_documents  sample_hard.txt  Videos
+Desktop                                        Music      Public             sample_soft.txt
+Documents                                      Pictures   sample_data.txt    Templates
+ 
+
+Explanation: Hard link creation completes successfully
+
+-----------------------------
+
+
+3. Symbolic Link Creation Output
+
+
+3.1 Output: 
+
+──(hisenberg㉿kali)-[~]
+└─$ ln -s sample_data.txt sample_soft.txt
+                                                                                                         
+┌──(hisenberg㉿kali)-[~]
+└─$ ls                                   
+Command_Line_Bits_Pilani_Graded-_Assignment_1  Downloads  project_documents  sample_hard.txt  Videos
+Desktop                                        Music      Public             sample_soft.txt
+Documents                                      Pictures   sample_data.txt    Templates
+ 
+
+Explanation: The symbolic link was created successfully and the command prints nothing by default.
+
+-----------------------------
+
+
+4. Inode Verification Output
+
+
+4.1 Output: 
+
+
+553135 -rw-rw-r-- 2 hisenberg hisenberg 31 Dec 26 13:31 sample_data.txt
+553135 -rw-rw-r-- 2 hisenberg hisenberg 31 Dec 26 13:31 sample_hard.txt
+553146 lrwxrwxrwx 1 hisenberg hisenberg 15 Dec 26 13:41 sample_soft.txt -> sample_data.txt
+
+
+Explanation: The output shows inode numbers for each file. The hard link shares the same inode as the original file, while the symbolic link has a different inode.
+
+
+-----------------------------
+
+
+5. Inode Analysis Output
+
+
+5.1 Output: 
+
+553135 -rw-rw-r-- 2 hisenberg hisenberg 31 Dec 26 13:31 sample_data.txt
+553135 -rw-rw-r-- 2 hisenberg hisenberg 31 Dec 26 13:31 sample_hard.txt
+553146 lrwxrwxrwx 1 hisenberg hisenberg 15 Dec 26 13:41 sample_soft.txt -> sample_data.txt
+
+
+
+Explanation: The output shows that sample_data.txt and sample_hard.txt share the same inode number 553135 which profes they point to the same file data while sample_soft.txt has a different inode 553146 because it is a separate link file that points to the original path
+
+-----------------------------
+
+
+6. File Metadata Inspection Output
+
+
+6.1 Output:
+
+  File: sample_data.txt
+  Size: 31              Blocks: 8          IO Block: 4096   regular file
+Device: 8,1     Inode: 553135      Links: 2
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/hisenberg)   Gid: ( 1000/hisenberg)
+Access: 2025-12-26 13:31:07.442576130 -0500
+Modify: 2025-12-26 13:31:15.570271947 -0500
+Change: 2025-12-26 13:38:37.167159503 -0500
+ Birth: 2025-12-26 13:31:07.442576130 -0500
+
+
+Explanation: I wroote stat sample_data.txt comman to view full file details The output confirms the file is 31 bytes, owned by hisenberg, has inode number 553135, and has 2 links
+
+-----------------------------
+
+
+7. Disk Usage Check Output
+
+
+7.1 Output: 751M    /home/hisenberg
+
+Explanation: This output shows the total disk usage of my home directory 
+
+-----------------------------
+
+8. File Size Overview Output
+
+
+8.1 Output: 
+
+4.0K    /home/hisenberg/Music
+4.0K    /home/hisenberg/Videos
+344M    /home/hisenberg/.cache
+1.5M    /home/hisenberg/Command_Line_Bits_Pilani_Graded-_Assignment_1
+4.0K    /home/hisenberg/Templates
+113M    /home/hisenberg/Downloads
+30M     /home/hisenberg/.mozilla
+259M    /home/hisenberg/.config
+4.0K    /home/hisenberg/Public
+32K     /home/hisenberg/Desktop
+20K     /home/hisenberg/Documents
+432K    /home/hisenberg/.local
+16K     /home/hisenberg/project_documents
+4.0M    /home/hisenberg/Pictures
+76K     /home/hisenberg/.pki
+16K     /home/hisenberg/.java
+8.0K    /home/hisenberg/.gnupg
+751M    /home/hisenberg
+
+
+Explanation: This output displays the size of each folder/file in my home directory in a readable format
+
+-----------------------------
+
+
+9. Link Deletion Test Outputs
+
+
+9.1 Output: No output , file deleted
+
+Explanation: The symbolic link was removed successfully 
+
+9.2 Output: 
+
+This is Sample text I Created 
+
+Explanation: The original file content is still present profing deleting the symbolic link does not affect the original file
+
+-----------------------------
+
+10. Disk Utility Demonstration Outputs
+
+
+10.1 Output:
+
+ Filesystem      Size  Used Avail Use% Mounted on
+udev            902M     0  902M   0% /dev
+tmpfs           194M  1.2M  193M   1% /run
+/dev/sda1        24G   16G  6.7G  70% /
+tmpfs           968M  4.0K  968M   1% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+tmpfs           968M  104K  968M   1% /tmp
+tmpfs           1.0M     0  1.0M   0% /run/credentials/getty@tty1.service
+tmpfs           194M  124K  194M   1% /run/user/1000
+tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-networkd.service
+
+
+
+Explanation: This output shows total, used, and available disk space for each filesystem in a human-readable format,
+
+ /dev/sda1 is 24GB total, 16GB used, and 6.7GB available (70% used)
+
+10.2 Output:
+
+tmpfs          tmpfs     194M  1.2M  193M   1% /run
+/dev/sda1      ext4       24G   16G  6.7G  70% /
+tmpfs          tmpfs     968M  4.0K  968M   1% /dev/shm
+tmpfs          tmpfs     5.0M     0  5.0M   0% /run/lock
+tmpfs          tmpfs     1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+tmpfs          tmpfs     968M  104K  968M   1% /tmp
+tmpfs          tmpfs     1.0M     0  1.0M   0% /run/credentials/getty@tty1.service
+tmpfs          tmpfs     194M  124K  194M   1% /run/user/1000
+tmpfs          tmpfs     1.0M     0  1.0M   0% /run/credentials/systemd-networkd.service
+                                                                                           
+
+
+Explanation: This output shows the filesystem type along with disk usage, which helps identify the partition formats
+
+ /dev/sda1 uses the ext4 filesystem and confirms the same usage values shown in df -h
+
+10.3 Output: 
+
+751M    /home/hisenberg
+
+
+Explanation: The output shows my home folder /home/hisenberg is using 751MB of storage
+
+10.4 Output: 
+
+4.0K    /home/hisenberg/Music
+4.0K    /home/hisenberg/Videos
+]344M   /home/hisenberg/.cache
+1.5M    /home/hisenberg/Command_Line_Bits_Pilani_Graded-_Assignment_1
+4.0K    /home/hisenberg/Templates
+113M    /home/hisenberg/Downloads
+30M     /home/hisenberg/.mozilla
+259M    /home/hisenberg/.config
+4.0K    /home/hisenberg/Public
+32K     /home/hisenberg/Desktop
+20K     /home/hisenberg/Documents
+432K    /home/hisenberg/.local
+16K     /home/hisenberg/project_documents
+4.0M    /home/hisenberg/Pictures
+76K     /home/hisenberg/.pki
+16K     /home/hisenberg/.java
+8.0K    /home/hisenberg/.gnupg
+751M    /home/hisenberg
+
+Explanation: This output summarizes disk usage of each item in my home directory
+
+The output shows which directories use the most space, such as .cache (344MB), .config (259MB) and Downloads (113MB).
+

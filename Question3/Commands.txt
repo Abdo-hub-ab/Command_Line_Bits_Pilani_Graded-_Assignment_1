@@ -1,0 +1,108 @@
+Question3
+
+-------------------------------------------------
+1. File Creation
+
+
+1.1 Command: echo "This is Sample text I Created" > sample_data.txt
+
+Explanation: I created a file named sample_data.txt in home directory and added sample text into it 
+
+-------------------------------------------------
+
+
+2. Hard Link Creation
+
+
+2.1 Command: ln sample_data.txt sample_hard.txt
+
+Explanation: I created a hard link named sample_hard.txt for sample_data.txt This hard link points to the same inode and data on disk as the original file.
+
+-------------------------------------------------
+
+3. Symbolic Link Creation
+
+
+3.1 Command: ln -s sample_data.txt sample_soft.txt
+
+Explanation: I created a symbolic link named sample_soft.txt that points to sample_data.txt A symbolic link stores the path to the original file.
+
+-------------------------------------------------
+
+
+4. Inode Verification
+
+
+4.1 Command: ls -li sample_data.txt sample_hard.txt sample_soft.txt
+
+Explanation: I used `ls -li` to display inode numbers for the original file and both links. This helps compare which files share the same inode.
+
+------------------------------------------------
+5. Inode Analysis
+
+
+5.1 Command: Analysis |
+
+Explanation: The output shows that sample_data.txt and sample_hard.txt share the same inode number 553135 which profes they point to the same file data while sample_soft.txt has a different inode 553146 because it is a separate link file that points to the original path
+
+-------------------------------------------------
+6. File Metadata Inspection
+
+
+6.1 Command: stat sample_data.txt
+
+Explanation: I wrote stat to display detailed metadata for sample_data.txt including permissions, owner, size, timestamps, and inode information.
+
+-------------------------------------------------
+
+
+7. Disk Usage Check
+
+
+7.1 Command: du -sh ~
+
+Explanation: I used du -sh ~ to display the total disk usage of my home directory in  human readable format
+
+-------------------------------------------------
+
+
+8. File Size Overview
+
+
+8.1 Command: du -h --max-depth=1 ~
+
+Explanation: I used du -h --max-depth=1 to show the size of each item inside my home directory in a readable format
+
+
+------------------------------------------------
+
+
+9. Link Deletion Test
+
+
+9.1 Command: rm sample_soft.txt
+
+Explanation: I deleted the symbolic link sample_soft.txt to test that removing the link does not affect the original file
+
+9.2 Command: cat sample_data.txt
+
+Explanation: I displayed the contents of sample_data.txt to confirm the original file still exists and remains unchanged after deleting the symbolic link
+
+-------------------------------------------------
+
+10. Disk Utility Demonstration
+
+
+10.1 Command: df -h
+
+Explanation: I used `df -h` to display filesystem disk space usage in a human-readable format
+
+10.2 Command: df -Th
+
+Explanation: I used `df -Th` to display disk usage along with the filesystem type for each mounted partition
+
+10.3 Command: du -sh ~
+Explanation: I used `du -sh` again to show total disk space used by my home directory
+
+10.4 Command: du -h --max-depth=1 ~
+Explanation: I used `du` with `--max-depth=1` to summarize the disk usage of each folder/file inside my home directory
