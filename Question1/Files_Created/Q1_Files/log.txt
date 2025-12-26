@@ -1,0 +1,6 @@
+admins are authorized to do admins permissions in this device
+
+Today Admins are not visible to users in varios ways  "admins"
+
+so no way admins 
+ 
