@@ -1,0 +1,265 @@
+Question_4 outputs
+
+-----------------------------
+1. System Uptime Verification Output
+
+
+1.1 Output: up 10 hours, 7 minutes
+
+
+Explanation: This output shows how long the system has been running since the last boot 
+
+-----------------------------
+2. User Process Listing Output
+
+
+2.1 Output: 
+
+                                                                                       
+┌──(hisenberg㉿kali)-[~]
+└─$ ps -u $USER -f
+UID          PID    PPID  C STIME TTY          TIME CMD
+hisenbe+    1261       1  0 05:07 ?        00:00:00 /usr/lib/systemd/systemd --user
+hisenbe+    1263    1261  0 05:07 ?        00:00:00 (sd-pam)
+hisenbe+    1282    1261  0 05:07 ?        00:00:01 /usr/bin/dbus-daemon --session --add
+hisenbe+    1284    1261  0 05:07 ?        00:00:00 /usr/bin/pipewire
+hisenbe+    1285    1261  0 05:07 ?        00:00:00 /usr/bin/pipewire -c filter-chain.co
+hisenbe+    1287    1261  0 05:07 ?        00:00:00 /usr/bin/gnome-keyring-daemon --fore
+hisenbe+    1288    1261  0 05:07 ?        00:00:00 /usr/bin/mpris-proxy
+hisenbe+    1289    1261  0 05:07 ?        00:00:00 /usr/bin/wireplumber
+hisenbe+    1290    1261  0 05:07 ?        00:00:00 /usr/bin/pipewire-pulse
+hisenbe+    1300    1250  0 05:07 ?        00:00:02 xfce4-session
+hisenbe+    1380    1261  0 05:07 ?        00:00:00 /usr/libexec/at-spi-bus-launcher
+hisenbe+    1387    1380  0 05:07 ?        00:00:00 /usr/bin/dbus-daemon --config-file=/
+hisenbe+    1397    1261  0 05:07 ?        00:00:00 /usr/libexec/at-spi2-registryd --use
+hisenbe+    1405       1  0 05:07 ?        00:00:00 /usr/bin/ssh-agent -s
+hisenbe+    1414    1261  0 05:07 ?        00:00:01 /usr/bin/gpg-agent --supervised
+hisenbe+    1417    1300  0 05:07 ?        00:02:05 xfwm4
+hisenbe+    1422    1261  0 05:07 ?        00:00:00 /usr/libexec/gvfsd
+hisenbe+    1428    1261  0 05:07 ?        00:00:00 /usr/libexec/gvfsd-fuse /run/user/10
+hisenbe+    1438    1300  0 05:07 ?        00:00:01 xfsettingsd
+hisenbe+    1444    1261  0 05:07 ?        00:00:00 /usr/libexec/dconf-service
+hisenbe+    1445    1300  0 05:07 ?        00:00:06 xfce4-panel
+hisenbe+    1454    1300  0 05:07 ?        00:00:27 Thunar --daemon
+hisenbe+    1461    1300  0 05:07 ?        00:00:20 xfdesktop
+hisenbe+    1466    1445  0 05:07 ?        00:00:02 /usr/lib/x86_64-linux-gnu/xfce4/pane
+hisenbe+    1471    1445  0 05:07 ?        00:02:12 /usr/lib/x86_64-linux-gnu/xfce4/pane
+hisenbe+    1472    1445  0 05:07 ?        00:00:01 /usr/lib/x86_64-linux-gnu/xfce4/pane
+hisenbe+    1473    1445  0 05:07 ?        00:01:37 /usr/lib/x86_64-linux-gnu/xfce4/pane
+hisenbe+    1474    1445  0 05:07 ?        00:00:00 /usr/lib/x86_64-linux-gnu/xfce4/pane
+hisenbe+    1475    1445  0 05:07 ?        00:00:00 /usr/lib/x86_64-linux-gnu/xfce4/pane
+hisenbe+    1477    1445  0 05:07 ?        00:00:00 /usr/lib/x86_64-linux-gnu/xfce4/pane
+hisenbe+    1481    1445  0 05:07 ?        00:00:00 /usr/lib/x86_64-linux-gnu/xfce4/pane
+hisenbe+    1528    1261  0 05:07 ?        00:00:01 /usr/lib/x86_64-linux-gnu/xfce4/noti
+hisenbe+    1531    1300  0 05:07 ?        00:00:01 nm-applet
+hisenbe+    1532    1300  0 05:07 ?        00:00:00 xiccd
+hisenbe+    1533    1300  0 05:07 ?        00:00:01 /usr/bin/python3 /usr/bin/blueman-ap
+hisenbe+    1534    1300  0 05:07 ?        00:00:00 xfce4-power-manager
+hisenbe+    1541    1300  0 05:07 ?        00:00:04 xfce4-screensaver
+hisenbe+    1542    1300  0 05:07 ?        00:00:00 /usr/libexec/geoclue-2.0/demos/agent
+hisenbe+    1555       1  0 05:07 ?        00:01:14 /usr/bin/vmtoolsd -n vmusr --blockFd
+hisenbe+    1566    1300  0 05:07 ?        00:00:00 /usr/libexec/polkit-mate-authenticat
+hisenbe+    1573    1300  0 05:07 ?        00:00:00 /usr/bin/python3 /usr/share/system-c
+hisenbe+    1608       1  0 05:07 ?        00:00:00 xcape -e Super_L Control_L Escape
+hisenbe+    1751    1261  0 05:07 ?        00:00:00 /usr/libexec/gvfs-udisks2-volume-mon
+hisenbe+    1767    1261  0 05:07 ?        00:00:00 /usr/libexec/gvfs-gphoto2-volume-mon
+hisenbe+    1772    1261  0 05:07 ?        00:00:03 /usr/libexec/gvfs-afc-volume-monitor
+hisenbe+    1773    1261  0 05:07 ?        00:00:00 /usr/libexec/bluetooth/obexd
+hisenbe+    1779    1261  0 05:07 ?        00:00:00 /usr/libexec/gvfs-goa-volume-monitor
+hisenbe+    1784    1261  0 05:07 ?        00:00:00 /usr/libexec/gvfs-mtp-volume-monitor
+hisenbe+    1799    1261  0 05:07 ?        00:00:00 /usr/libexec/gvfsd-metadata
+hisenbe+    1803    1422  0 05:07 ?        00:00:00 /usr/libexec/gvfsd-trash --spawner :
+hisenbe+   12316    1261  0 05:29 ?        00:00:00 /usr/libexec/xdg-desktop-portal
+hisenbe+   12325    1261  0 05:29 ?        00:00:00 /usr/libexec/xdg-permission-store
+hisenbe+   12330    1261  0 05:29 ?        00:00:00 /usr/libexec/xdg-document-portal
+hisenbe+   12341    1261  0 05:29 ?        00:00:00 /usr/libexec/xdg-desktop-portal-gtk
+hisenbe+   31800    1422  0 06:07 ?        00:00:00 /usr/libexec/gvfsd-network --spawner
+hisenbe+   31810    1422  0 06:07 ?        00:00:00 /usr/libexec/gvfsd-dnssd --spawner :
+hisenbe+  288589       1  0 14:52 ?        00:00:01 /usr/bin/qterminal
+hisenbe+  288604  288589  0 14:52 pts/0    00:00:00 /usr/bin/zsh
+hisenbe+  301590  288604 99 15:19 pts/0    00:00:00 ps -u hisenberg -f
+
+
+Explanation: The output lists all processes running under my user account including PID, parent PID, and command details
+
+-----------------------------
+
+3. CPU Usage Analysis Output
+
+
+3.1 Output: 
+
+    PID COMMAND         %CPU
+   1471 wrapper-2.0      0.3
+   1417 xfwm4            0.3
+   1473 wrapper-2.0      0.2
+   1555 vmtoolsd         0.2
+ 288589 qterminal        0.1
+   1454 Thunar           0.0
+   1461 xfdesktop        0.0
+ 288604 zsh              0.0
+   1445 xfce4-panel      0.0
+
+
+Explanation: I used ps -u $USER -o pid,comm,%cpu --sort=-%cpu | head to list my running processes and sort them by CPU usage The process wrapper-2.0 (PID 1471) appears at the top, which means it is currently the highest CPU consumer among my processes.
+
+
+-----------------------------
+
+4. Background Process Execution Outputs
+
+
+4.1 Output:
+
+[2] 316019
+
+
+
+Explanation: The output confirms the process started in the background with a job number and PID
+
+4.2 Output: 
+
+[1]  - running    sleep 1200
+[2]  + running    sleep 1200
+
+Explanation: The jobs output shows the background task is still running.
+
+-----------------------------
+5. Process Priority Management Outputs
+
+
+5.1 Output: 
+
+[3] 317782
+ 
+Explanation: I started a sleep 1200 process in the background so it keeps running while I continue using the terminal
+ The & runs it in the background and returns the PID/job number 
+
+5.2 Output: 
+ 
+315992 sleep
+316019 sleep
+317782 sleep
+
+
+Explanation:   I listed all processes running under my user account and filtered only the ones containing sleep
+This helps me find the PID of the sleep process so I can modify its priority>
+
+
+
+5.3 Output: 
+
+317782 (process ID) old priority 5, new priority 10
+
+
+Explanation: to change the process priority by setting the niceness value of PID 317782 to 10  higher niceness means the process runs with lower priority allowing other processes to get CPU time first
+
+
+5.4 Output: 
+
+PID  NI COMMAND
+ 317782  10 sleep
+
+
+Explanation: I displayed the process details to verify the priority change 
+, The output shows the NI (niceness) value confirming it was updated to 10 successfully
+=
+-----------------------------
+6. Memory Usage Monitoring Output
+
+
+6.1 Output:
+
+              total        used        free      shared  buff/cache   available
+Mem:           1.9Gi       790Mi       536Mi        20Mi       800Mi       1.1Gi
+Swap:          1.3Gi       184Mi       1.1Gi
+
+
+Explanation: This output shows total, used, free, and available memory in human-readable units
+
+-----------------------------
+
+7. Disk Space Inspection Output
+
+
+7.1 Output: 
+
+ilesystem      Size  Used Avail Use% Mounted on
+/dev/sda1        24G   16G  6.7G  70% /
+
+Explanation: This output shows the disk usage of the filesystem where my home directory is located
+,The /dev/sda1 partition has 24GB total, 16GB used, and 6.7GB available,it is currently 70% full.
+
+-----------------------------
+
+8. Shell Identification Output
+
+8.1 Output: /usr/bin/zsh
+
+Explanation: This output shows the name and path of the shell currently being used
+
+-----------------------------
+
+9. Output Redirection Outputs
+
+
+9.1 Output: file created not output
+Explanation: The output was redirected into system_report.txt 
+
+9.2 Output: Linux kali 6.12.38+kali-amd64 #1 SMP PREEMPT_DYNAMIC Kali 6.12.38-1kali1 (2025-08-12) x86_64 GNU/Linux
+
+Explanation: This output confirms the system information was successfully saved into the report file
+It includes the OS name, kernel version, build information, and system architecture
+
+-----------------------------
+
+
+10. Disk Usage Visualization Output
+
+10.1 Output:
+
+ --- /home/hisenberg ----------------------------------------------------------------------------------------------------
+  350.8 MiB [#################] /.cache                                                                                 
+  263.3 MiB [############     ] /.config
+  112.4 MiB [#####            ] /Downloads
+   29.8 MiB [#                ] /.mozilla
+    4.3 MiB [                 ] /Pictures
+    3.2 MiB [                 ] /Command_Line_Bits_Pilani_Graded-_Assignment_1
+  740.0 KiB [                 ] /.local
+   76.0 KiB [                 ] /.pki
+   32.0 KiB [                 ] /Desktop
+   24.0 KiB [                 ]  .xsession-errors
+   20.0 KiB [                 ] /Documents
+   16.0 KiB [                 ] /.java
+   16.0 KiB [                 ]  .xsession-errors.old
+   16.0 KiB [                 ] /project_documents
+   12.0 KiB [                 ]  .face
+   12.0 KiB [                 ]  .zshrc
+   12.0 KiB [                 ]  .viminfo
+    8.0 KiB [                 ] /.gnupg
+    8.0 KiB [                 ]  .bashrc
+    8.0 KiB [                 ]  .zsh_history
+e   4.0 KiB [                 ] /Videos
+e   4.0 KiB [                 ] /Templates
+e   4.0 KiB [                 ] /Public
+e   4.0 KiB [                 ] /Music
+    4.0 KiB [                 ]  .bashrc.original
+    4.0 KiB [                 ]  .profile
+    4.0 KiB [                 ]  .zprofile
+    4.0 KiB [                 ]  .bash_logout
+    4.0 KiB [                 ]  system_report.txt
+    4.0 KiB [                 ]  .Xauthority
+    4.0 KiB [                 ]  .dmrc
+@   0.0   B [                 ]  .face.icon
+    0.0   B [                 ]  .sudo_as_admin_successful
+    0.0   B [                 ]  .ICEauthority
+
+Explanation: 
+
+ncdu shows an interactive summary of disk usage inside my home directory /home/hisenberg It lists folders and files with their sizes so I can see which ones take the most space (for example, .cache and .config are the largest), and I can navigate into them with the arrow keys to find exactly what is using storage
+
+
+
+
+
+

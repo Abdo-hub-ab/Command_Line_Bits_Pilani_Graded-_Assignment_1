@@ -1,0 +1,101 @@
+Question4
+
+-------------------------------------------------
+1. System Uptime Verification
+
+
+1.1 Command: uptime -p
+
+Explanation: I ran uptime -p to display how long the system has been running since the last boot 
+
+-------------------------------------------------
+
+2. User Process Listing
+
+
+2.1 Command: ps -u $USER -f
+
+Explanation: I used ps -u $USER -f to list all processes currently running under my user account with full details
+
+-------------------------------------------------
+
+
+3. CPU Usage Analysis
+
+
+3.1 Command: ps -u $USER -o pid,comm,%cpu --sort=-%cpu | head
+
+Explanation: I used`ps to sort my running processes by CPU usage and displayed the highest CPU consuming processes at the top
+
+-------------------------------------------------
+
+4. Background Process Execution
+
+
+4.1 Command: sleep 300 &
+
+Explanation: I started a sleep command in the background to demonstrate running a background process
+
+4.2 Command: jobs
+Explanation: I used jobs to verify that the background process is currently running in the shell session
+
+-------------------------------------------------
+5. Process Priority Management
+
+
+5.1 Command: sleep 1200 &
+Explanation: I started a sleep 1200 process in the background so it keeps running while I continue using the terminal
+ The & runs it in the background and returns the PID/job number
+
+5.2 Command: ps -u $USER -o pid,comm | grep sleep
+Explanation: I listed all processes running under my user account and filtered only the ones containing sleep
+This helps me find the PID of the sleep process so I can modify its priority>
+
+5.3 Comand: renice 10 -p 317782	
+Explanation: to change the process priority by setting the niceness value of PID 317782 to 10  higher niceness means the process runs with lower priority allowing other processes to get CPU time first
+
+5.4 command: ps -o pid,ni,comm -p 317782
+Explanation: I displayed the process details to verify the priority change , The output shows the NI (niceness) value confirming it was updated to 10 successfully
+
+-------------------------------------------------
+
+6. Memory Usage Monitoring
+
+
+6.1 Command: free -h
+
+Explanation: I ran free -h to display memory usage in readable format, showing used, free, and available RAM
+
+-------------------------------------------------
+
+7. Disk Space Inspection
+
+
+7.1 Command: df -h ~
+
+Explanation: I used df -h ~ to show the disk usage of the filesystem where my home directory is located.
+
+-------------------------------------------------
+8. Shell Identification
+
+
+8.1 Command: echo $SHELL
+
+Explanation: I displayed the value of $SHELL  to identify which shell is currently in use
+
+-------------------------------------------------
+9. Output Redirection
+
+
+9.1 Command: uname -a > system_report.txt
+Explanation: I redirected the output of the system information command into a file named system_report.txt
+
+9.2 Command: cat system_report.txt
+
+Explanation: I displayed the contents of the report file 
+-------------------------------------------------
+10. Disk Usage Visualization
+
+
+10.1 Command: ncdu ~
+Explanation: I ran ncdu ~ on my home directory to interactively view disk usage and identify which folders consume the most space
