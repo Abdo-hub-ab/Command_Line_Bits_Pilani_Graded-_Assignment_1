@@ -9,7 +9,83 @@ Explanation :I wrote whoami command to display the currently logged in username
 
 Explanation: I wrote groups to list all groups my user belongs to. The output confirms my account is in groups like sudo, which indicates I have admin access 
 
+-------------------------------------------------
 
+2. Workspace Validation
+
+2.1 Pwd
+
+Explanation: I wrote pwd to check my current working directory The output shows my session is currently in /home/hisenberg
+
+2.2 ls -l 
+
+Explanation: I wrote ls -l command to list files and directories in long forma The output shows permissions, owner, size, and timestamps for each item
+
+-------------------------------------------------
+
+
+3. Environment Confirmation File
+
+
+3.1 Command: echo &quot;Linux user environment verified&quot; > user_info.txt
+Explanation: I created the file `user_info.txt` and wrote the text that i told to write into it using output redirection.
+
+-------------------------------------------------
+4. File Integrity Check Character Count
+
+
+4.1 Command: wc -m user_info.txt
+Explanation: I used `wc -m` to count the number of characters in `user_info.txt` to confirm it contains text.
+
+-------------------------------------------------
+5. Learning the Tools 
+
+
+5.1 Command: man mkdir
+Explanation: I opened the manual page for mkdir to learn its usage and available options
+
+5.2 Useful option: mkdir -p new_parent
+Explanation: The -p option creates parent directories automatically if they don’t exist and prevents errors if the directory already exist
+
+-------------------------------------------------
+6. Home Directory Inspection 
+
+
+6.1 Command: ls -1 ~ | sort
+
+Explanation: I listed the contents of my home directory and sorted the results alphabetically
+
+
+-------------------------------------------------
+7. Log Investigation Search "admin" in log.txt
+
+
+
+7.1 Command: grep "admin" log.txt
+
+Explanation: I searched for the word "admin" inside `log.txt` and displayed only the matching lines.
+
+-------------------------------------------------
+8. System Information Check 
+
+
+8.1 Command: uname -r
+
+Explanation : I used uname -r to display the Linux kernel version currently running on the system
+
+-------------------------------------------------
+9. Network Connectivity Test 
+
+
+9.1 Command: ping -c 10 www.google.com
+Explanation: I sent 10 ping requests to www.google.com to verify network connectivity.
+
+-------------------------------------------------
+10. System Health Awareness 
+
+
+10.1 Command: uptime
+Explanation: I wrote uptime command to check how long the system has been running and the current load averages
 
 
 

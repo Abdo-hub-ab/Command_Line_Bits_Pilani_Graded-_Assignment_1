@@ -1,2 +1,130 @@
-1.command-whoami
-output- hisenberg
+Question1 outputs
+
+1. User Identity Verification Outputs
+
+1.1 output: hisenberg
+
+Explanation: The output shows I am logged in as hisenberg.
+
+1.2 output: hisenberg adm dialout cdrom floppy sudo audio dip video plugdev users netdev scanner bluetooth lpadmin wireshark kaboxer
+Explanation: The output confirms my account is in groups like sudo, which indicates I have admin access.
+
+-----------------------------
+
+2. Workspace Validation Outputs
+
+2.1 output: /home/hisenberg
+Explanation: The output shows my session is currently in /home/hisenberg.
+
+2.2 output:
+total 36
+drwxrwxr-x 5 hisenberg hisenberg 4096 Dec 25 17:14 Command_Line_Bits_Pilani_Graded-_Assignment_1
+drwxr-xr-x 3 hisenberg hisenberg 4096 Dec 20 04:49 Desktop
+drwxr-xr-x 2 hisenberg hisenberg 4096 Dec 10 14:07 Documents
+drwxr-xr-x 2 hisenberg hisenberg 4096 Dec 20 04:39 Downloads
+drwxr-xr-x 2 hisenberg hisenberg 4096 Dec 10 14:07 Music
+drwxr-xr-x 2 hisenberg hisenberg 4096 Dec 25 17:31 Pictures
+drwxr-xr-x 2 hisenberg hisenberg 4096 Dec 10 14:07 Public
+drwxr-xr-x 2 hisenberg hisenberg 4096 Dec 10 14:07 Templates
+drwxr-xr-x 2 hisenberg hisenberg 4096 Dec 10 14:07 Videos
+
+Explanation: The output shows permissions, owner, size, and timestamps for each item.
+
+-----------------------------
+
+3. Environment Confirmation File Output
+
+3.1 output: no output
+Explanation: The command i wrote ,it was written directly into user_info.txt, so nothing appeared on the terminal
+
+-----------------------------
+
+4. File Integrity Check Output
+
+4.1 output: 44 user_info.txt
+
+Explanation: This output shows the number of characters in user_info.txt, confirmes that the file contains content.
+
+-----------------------------
+
+5. mkdir Manual Output
+
+5.1 output: manual page opened
+Explanation: The man page displays documentation for mkdir including options and their meanings
+
+5.2 output: useful option : -p
+Explanation: The -p option creates parent directories if needed and avoids errors if the directory already exists.
+
+-----------------------------
+
+6. Home Directory Inspection Output
+
+6.1 output: 
+
+Command_Line_Bits_Pilani_Graded-_Assignment_1
+Desktop
+Documents
+Downloads
+Music
+Pictures
+Public
+Templates
+Videos
+
+
+Explanation: The output is sorted alphabetically 
+
+-----------------------------
+
+7. Log Investigation Output
+
+7.1 output: 
+
+admins are authorized to do admins permissions in this device
+Today Admins are not visible to users in varios ways  "admins"
+so no way admins 
+
+Explanation: Only the lines containing the word "admin" are shown, the search worked.
+
+
+
+8. System Information Check Output
+
+8.1 output: 6.12.38+kali-amd64
+
+Explanation: This output is the Linux kernel version currently running on the system.
+
+-----------------------------
+
+9. Network Connectivity Test Output
+
+9.1 output: 
+
+PING forcesafesearch.google.com (216.239.38.120) 56(84) bytes of data.
+64 bytes from any-in-2678.1e100.net (216.239.38.120): icmp_seq=1 ttl=128 time=227 ms
+64 bytes from any-in-2678.1e100.net (216.239.38.120): icmp_seq=2 ttl=128 time=329 ms
+64 bytes from any-in-2678.1e100.net (216.239.38.120): icmp_seq=3 ttl=128 time=187 ms
+64 bytes from any-in-2678.1e100.net (216.239.38.120): icmp_seq=4 ttl=128 time=223 ms
+64 bytes from any-in-2678.1e100.net (216.239.38.120): icmp_seq=5 ttl=128 time=225 ms
+64 bytes from any-in-2678.1e100.net (216.239.38.120): icmp_seq=6 ttl=128 time=145 ms
+64 bytes from any-in-2678.1e100.net (216.239.38.120): icmp_seq=7 ttl=128 time=105 ms
+64 bytes from any-in-2678.1e100.net (216.239.38.120): icmp_seq=8 ttl=128 time=202 ms
+64 bytes from any-in-2678.1e100.net (216.239.38.120): icmp_seq=9 ttl=128 time=230 ms
+64 bytes from any-in-2678.1e100.net (216.239.38.120): icmp_seq=10 ttl=128 time=240 ms
+
+--- forcesafesearch.google.com ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9008ms
+rtt min/avg/max/mdev = 104.967/211.408/329.123/56.554 ms
+
+
+Explanation: The ping results show whether packets were received and provide latency/packet loss statistics
+-----------------------------
+
+10. System Health Awareness Output
+
+10.1 output:  07:19:01 up  3:19,  1 user,  load average: 0.11, 0.10, 0.09
+
+
+Explanation: This output shows the system has been up for 3 hours 19 minutes, there is 1 user logged in, and the load averages are 0.11, 0.10, 0.09
+
+-----------------------------
