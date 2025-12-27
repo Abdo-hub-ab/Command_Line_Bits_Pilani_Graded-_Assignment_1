@@ -24,7 +24,7 @@ Explanation: I created an empty file named plan.txt in  documents
 3. Content Addition
 
 
-3.1 Command: echo I created this file for solving first assignment of linux >user_info.txt
+3.1 Command: echo I created this file for solving first assignment of linux > plan.txt
 
 Explanation: I wrote  text into plan.txt using output redirection to store a short project note.
 

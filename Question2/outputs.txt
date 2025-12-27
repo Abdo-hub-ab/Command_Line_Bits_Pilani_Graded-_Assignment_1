@@ -21,7 +21,7 @@ Explanation: The directory is created successfully
 └─$ ls
                                                                                                          
 ┌──(hisenberg㉿kali)-[~/documents]
-└─$ touch user_info.txt
+└─$ touch plan.txt
 
 
 
@@ -30,18 +30,20 @@ Explanation: Changing directory does not show output unless there is an error
 2.2 Output: 
 
 ──(hisenberg㉿kali)-[~/documents]
-└─$ touch user_info.txt
+└─$ touch plan.txt
+
                                                                                                          
 ┌──(hisenberg㉿kali)-[~/documents]
 └─$ ls
-user_info.txt
+plan.txt
+
 
 
 Explanation: The touch command creates the file 
 
 -----------------------------
 3. Content Addition Output
------------------------------
+
 
 3.1 Output: I Wrote Text Directly To the file With echo Command So There Is No Output
 
